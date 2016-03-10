@@ -5,4 +5,4 @@ WORKDIR /usr/src/app
 # use this to test a SLACK_TOKEN environment variable
 # ENV SLACK_TOKEN ###token###
 
-RUN python run.py
+CMD python run.py

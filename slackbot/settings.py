@@ -1,4 +1,5 @@
 import os
+import sys
 
 DEBUG = False
 
@@ -14,6 +15,7 @@ except:
     # Alternatively, place slack token in the source code
     # API_TOKEN = '###token###'
     print 'SLACK_TOKEN missing'
+    sys.exit(1)
 
 '''
 If you use Slack Web API to send messages (with send_webapi() or reply_webapi()),
